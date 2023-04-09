@@ -11,13 +11,44 @@ return {
     ["<leader>bn"] = { "<cmd>tabnew<cr>", desc = "New tab" },
     ["<leader>bD"] = {
       function()
-        require("astronvim.utils.status").heirline.buffer_picker(function(bufnr) require("astronvim.utils.buffer").close(bufnr) end)
+        require("astronvim.utils.status").heirline.buffer_picker(
+          function(bufnr) require("astronvim.utils.buffer").close(bufnr) end
+        )
       end,
       desc = "Pick to close",
     },
     -- tables with the `name` key will be registered with which-key if it's installed
     -- this is useful for naming menus
     ["<leader>b"] = { name = "Buffers" },
+    ["<leader>a"] = { name = "Harpoon" },
+    ["<leader>al"] = {
+      function() require("harpoon.ui").toggle_quick_menu() end,
+      desc = "Harpoon Quick Menu",
+    },
+    ["<leader>aa"] = {
+      function() require("harpoon.mark").add_file() end,
+      desc = "Add file mark",
+    },
+    ["<leader>a1"] = {
+      function() require("harpoon.ui").nav_file(1) end,
+      desc = "Go to file 1",
+    },
+    ["<leader>a2"] = {
+      function() require("harpoon.ui").nav_file(2) end,
+      desc = "Go to file 2",
+    },
+    ["<leader>a3"] = {
+      function() require("harpoon.ui").nav_file(3) end,
+      desc = "Go to file 3",
+    },
+    ["<leader>a4"] = {
+      function() require("harpoon.ui").nav_file(4) end,
+      desc = "Go to file 4",
+    },
+    ["<leader>a5"] = {
+      function() require("harpoon.ui").nav_file(5) end,
+      desc = "Go to file 5",
+    },
     -- quick save
     -- ["<C-s>"] = { ":w!<cr>", desc = "Save File" },  -- change description but the same command
   },
