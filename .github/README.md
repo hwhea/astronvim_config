@@ -1,36 +1,11 @@
-# AstroNvim User Configuration Example
+# Harrie's Config
 
-A user configuration template for [AstroNvim](https://github.com/AstroNvim/AstroNvim)
+## Install AstroNvim
+`git clone https://github.com/AstroNvim/AstroNvim ~/.config/nvim`
 
-## 🛠️ Installation
-
-#### Make a backup of your current nvim and shared folder
-
-```shell
-mv ~/.config/nvim ~/.config/nvim.bak
-mv ~/.local/share/nvim ~/.local/share/nvim.bak
-```
-
-#### Clone AstroNvim
-
-```shell
-git clone https://github.com/AstroNvim/AstroNvim ~/.config/nvim
-```
-
-#### Create a new user repository from this template
-
-Press the "Use this template" button above to create a new repository to store your user configuration.
-
-You can also just clone this repository directly if you do not want to track your user configuration in GitHub.
-
-#### Clone the repository
-
-```shell
-git clone https://github.com/<your_user>/<your_repository> ~/.config/nvim/lua/user
-```
-
-#### Start Neovim
-
-```shell
-nvim
-```
+## Installation
+1. Install ripgrep `brew install ripgrep`
+2. Install Firacode font https://github.com/ryanoasis/nerd-fonts/releases/download/v2.3.3/FiraCode.zip
+3. Back up the default config.
+4. Clone this config to ~/.config/nvim/lua/user 
+5. Configure terminal to use the installed Firacode font.
