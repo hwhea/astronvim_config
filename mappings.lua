@@ -49,6 +49,15 @@ return {
       function() require("harpoon.ui").nav_file(5) end,
       desc = "Go to file 5",
     },
+    -- Buffer Nav
+    ["<Tab>"] = {
+      "<cmd> bnext<cr>",
+      desc = "Next buffer",
+    },
+    ["<S-Tab>"] = {
+      "<cmd> bprev<cr>",
+      desc = "Prev Buffer",
+    },
     -- quick save
     -- ["<C-s>"] = { ":w!<cr>", desc = "Save File" },  -- change description but the same command
   },
