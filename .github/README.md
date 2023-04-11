@@ -1,5 +1,12 @@
 # Harrie's Config
 
+## Features
+- tokyonight as default theme
+- harpoon 
+- harpoon quick bindings
+- support for ripgrep
+- treesitter-context su[[prt
+
 ## Install AstroNvim
 
 `git clone https://github.com/AstroNvim/AstroNvim ~/.config/nvim`
