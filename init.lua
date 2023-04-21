@@ -44,6 +44,7 @@ return {
       -- filter = function(client) -- fully override the default formatting function
       --   return true
       -- end
+      importModuleSpecifierPreference = "project-relative",
     },
     -- enable servers that you already have installed without mason
     servers = {

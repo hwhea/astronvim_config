@@ -1,7 +1,7 @@
 return {
   "nvim-treesitter/nvim-treesitter",
   opts = {
-    ensure_installed = { "lua" },
+    ensure_installed = { "lua", "svelte" },
   },
   {
     "nvim-treesitter/nvim-treesitter-context",
